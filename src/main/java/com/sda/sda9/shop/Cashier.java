@@ -7,7 +7,7 @@ public class Cashier {
 
         double total = 0;
         for (Product product : products) {
-            if (product != null) {
+            if (product != null) {  //the array will be initialized with null products(if we add 3, 2 will be null)
                 total += product.getPrice(); // total = total + price;
             }
         }
