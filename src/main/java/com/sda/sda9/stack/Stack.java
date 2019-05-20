@@ -22,10 +22,9 @@ public class Stack {
     public int pop(){
         int value = -1;
         if(top>0){
-            value = stackData[--top];
+            value = stackData[--top]; // same as top-- then stackData[top]
             stackData[top] = 0;
         }
-//        top--;
 
         return value;
     }
