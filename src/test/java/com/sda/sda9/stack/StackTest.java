@@ -30,6 +30,28 @@ public class StackTest {
         int actualPopResult = s.pop();
         int expectedPopResult = -1;
         Assert.assertEquals(expectedPopResult, actualPopResult);
+    }
 
+    @Test
+    public void testPeek(){
+        Stack s = new Stack(3);
+
+        Assert.assertEquals(-1, s.peek()); //return -1 if stack is empty
+
+        s.push(5);
+        s.peek();
+        Assert.assertEquals(5, s.peek());
+
+//        s.push(15);
+//        Assert.assertEquals(15, s.peek());
+    }
+
+    @Test
+    public void testIsEmpty(){
+        Stack s = new Stack(100);
+        Assert.assertTrue(s.isEmpty());
+        System.out.println(s.toString());
+        s.push(15);
+        Assert.assertFalse(s.isEmpty());
     }
 }
