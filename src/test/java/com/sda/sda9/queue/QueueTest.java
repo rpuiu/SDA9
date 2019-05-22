@@ -30,4 +30,28 @@ public class QueueTest {
         System.out.println(queue);
 
     }
+
+    @Test
+    public void testShift(){
+        Queue q = new Queue(5);
+        q.enqueue(3);
+        q.enqueue(4);
+        q.enqueue(5);
+        System.out.println(q);
+        q.dequeue();
+        System.out.println(q);
+
+        q.dequeue(); //0,5,0,0,0
+        System.out.println(q);
+
+        q.dequeue();
+        System.out.println(q);
+        q.enqueue(5);
+        q.enqueue(3);
+        q.enqueue(2);
+        System.out.println(q);
+
+//        q.shift();
+//        System.out.println(q);
+    }
 }

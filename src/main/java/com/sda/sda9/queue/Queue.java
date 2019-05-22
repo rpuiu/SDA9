@@ -22,11 +22,19 @@ public class Queue {
     public int dequeue(){
         int value =-124; //random value => no more elements;
         if(front<back) {
-             value = array[front];
+            value = array[front];
             array[front] = 0;
-            front++;
+            shift();
+            back--;
         }
         return value;
+    }
+
+    public void shift(){
+       for(int i=front; i<back-1; i++){
+           array[i] = array[i+1];
+           array[i+1]=0;
+       }
     }
 
     public String toString(){
