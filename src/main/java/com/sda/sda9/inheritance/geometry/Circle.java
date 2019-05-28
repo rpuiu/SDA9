@@ -8,7 +8,18 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
+    @Override
+    public String getNane() {
+        return null;
+    }
+
+    @Override
+    public int getNrOfEdges() {
+        return Integer.parseInt(null);
+    }
+
     public void calculateArea(){
         System.out.println("Circle: " + Math.PI*Math.pow(radius,2));
     }
+
 }
