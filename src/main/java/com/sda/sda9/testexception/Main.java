@@ -1,6 +1,4 @@
-package com.sda.sda9.inheritance.testexception;
-
-import java.io.FileNotFoundException;
+package com.sda.sda9.testexception;
 
 public class Main {
 

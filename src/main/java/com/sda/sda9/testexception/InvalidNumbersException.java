@@ -1,4 +1,4 @@
-package com.sda.sda9.inheritance.testexception;
+package com.sda.sda9.testexception;
 
 public class InvalidNumbersException extends Exception{
 

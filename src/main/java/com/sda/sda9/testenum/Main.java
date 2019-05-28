@@ -1,4 +1,4 @@
-package com.sda.sda9.inheritance.testenum;
+package com.sda.sda9.testenum;
 
 public class Main {
 
