@@ -1,19 +1,23 @@
 package com.sda.sda9.testenum;
 
+import java.util.Arrays;
+
 public class Main {
 
     public static void main(String[] args) {
         TrafficLight t = TrafficLight.ORANGE;
-        System.out.println(t.getMessage());
-        System.out.println(t.getTimeToWait());
-        t.modifyTimeToWait(1000);
-        System.out.println(t.getTimeToWait());
-
-        for(TrafficLight x : TrafficLight.values()){
-
-            System.out.println(TrafficLight.valueOf("GREEN"));
-//            System.out.println(x.getMessage());
-        }
+        System.out.println(TrafficLight.valueOf("ORANGE"));
+        System.out.println(Arrays.toString(TrafficLight.values()));
+//        System.out.println(t.getMessage());
+//        System.out.println(t.getTimeToWait());
+//        t.modifyTimeToWait(1000);
+//        System.out.println(t.getTimeToWait());
+//
+//        for(TrafficLight x : TrafficLight.values()){
+//
+//            System.out.println(TrafficLight.valueOf("GREEN"));
+////            System.out.println(x.getMessage());
+//        }
 
 //        switchSemaphore(t);
 //        switchSemaphore(TrafficLight.RED);

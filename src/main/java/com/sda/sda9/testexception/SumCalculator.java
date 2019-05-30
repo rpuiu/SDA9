@@ -15,7 +15,7 @@ public class SumCalculator {
 
         try {
             sum = sum(a, b);
-        } catch (InvalidNumbersException e) {
+        } catch (InvalidNumbersException | NullPointerException e) {
             e.printStackTrace();
         }
         System.out.println(sum);

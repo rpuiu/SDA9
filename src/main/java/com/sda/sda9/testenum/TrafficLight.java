@@ -26,4 +26,5 @@ public enum TrafficLight {
     public void modifyTimeToWait(int time){
         this.timeToWait = time;
     }
+
 }
