@@ -10,8 +10,8 @@ public class Main {
 //        SumCalculator s = new SumCalculator();
 //        s.calculateSum(3, 5);
 //        s.calculateSum(0, 5);
-//        doSomethingElse();
-        doSomethingSomething();
+        doSomethingElse();
+//        doSomethingSomething();
     }
 
     static void  doSomething() throws InvalidNumbersException, IOException {
@@ -29,7 +29,7 @@ public class Main {
         }
     }
 
-    static void doSomethingSomething() throws IOException{
-        throw new IOException();
+    static void doSomethingSomething() throws InvalidNumbersException{
+        throw new InvalidNumbersException("My Exception");
     }
 }

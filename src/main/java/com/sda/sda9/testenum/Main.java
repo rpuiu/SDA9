@@ -5,9 +5,9 @@ import java.util.Arrays;
 public class Main {
 
     public static void main(String[] args) {
-        TrafficLight t = TrafficLight.ORANGE;
-        System.out.println(TrafficLight.valueOf("ORANGE"));
-        System.out.println(Arrays.toString(TrafficLight.values()));
+//        TrafficLight t = TrafficLight.ORANGE;
+//        System.out.println(TrafficLight.valueOf("ORANGE"));
+//        System.out.println(Arrays.toString(TrafficLight.values()));
 //        System.out.println(t.getMessage());
 //        System.out.println(t.getTimeToWait());
 //        t.modifyTimeToWait(1000);
@@ -22,6 +22,7 @@ public class Main {
 //        switchSemaphore(t);
 //        switchSemaphore(TrafficLight.RED);
 //        switchSemaphoreString("RED");
+        System.out.println(5/0);
 
     }
 
