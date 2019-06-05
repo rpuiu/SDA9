@@ -9,7 +9,7 @@ public class CalculatorDeSumaTest {
     public void testSuma(){
         int actual = CalculatorDeSuma.calculeazaSumaDeNrPozitive(2,3);
         int expected = 5;
-//        String errorMessage = "The sum is wrong!!!";
+//        String errorMessage = "The calculate is wrong!!!";
 //        Assert.assertEquals(errorMessage, expected, actual);
         Assert.assertEquals(expected, actual);
     }
